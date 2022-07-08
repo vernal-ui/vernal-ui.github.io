@@ -21,28 +21,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"vernal-ui.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1},"gitalk":{"order":-2}},"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="一个平平无奇的业余编程爱好者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://vernal-ui.github.io/about/index.html">
+    <meta name="description" content="一直以来想去通读JavaScript权威指南（犀牛版）这本书，无奈里面有些知识实在写得晦涩难懂，或者是编排原因，导致一直没有持续性的阅读，今天起，用业余时间，利用博客的方式来记录阅读这本书时的收获。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript权威指南系列一">
+<meta property="og:url" content="http://vernal-ui.github.io/posts/2215506994.html">
 <meta property="og:site_name" content="Vernal">
-<meta property="og:description" content="一个平平无奇的业余编程爱好者">
+<meta property="og:description" content="一直以来想去通读JavaScript权威指南（犀牛版）这本书，无奈里面有些知识实在写得晦涩难懂，或者是编排原因，导致一直没有持续性的阅读，今天起，用业余时间，利用博客的方式来记录阅读这本书时的收获。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-13T14:53:40.000Z">
-<meta property="article:modified_time" content="2022-06-19T07:57:57.613Z">
+<meta property="article:published_time" content="2022-06-19T08:03:05.000Z">
+<meta property="article:modified_time" content="2022-06-19T08:58:23.156Z">
 <meta property="article:author" content="Vernal">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://vernal-ui.github.io/about/">
+<link rel="canonical" href="http://vernal-ui.github.io/posts/2215506994.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"http://vernal-ui.github.io/about/index.html","path":"about/index.html","title":"关于我"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://vernal-ui.github.io/posts/2215506994.html","path":"posts/2215506994.html","title":"JavaScript权威指南系列一"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>关于我 | Vernal
-</title>
+<title>JavaScript权威指南系列一 | Vernal</title>
   
 
 
@@ -132,7 +131,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -145,6 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A2%E7%B4%A2JavaScript"><span class="nav-number">1.</span> <span class="nav-text">探索JavaScript</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EESMA%E6%A0%87%E5%87%86"><span class="nav-number">2.</span> <span class="nav-text">关于ESMA标准</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%BF%E4%B8%BB%E7%8E%AF%E5%A2%83"><span class="nav-number">3.</span> <span class="nav-text">宿主环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">小结</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -206,37 +206,143 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://vernal-ui.github.io/posts/2215506994.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Vernal">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Vernal">
+      <meta itemprop="description" content="夜深了，该休息了">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="JavaScript权威指南系列一 | Vernal">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          JavaScript权威指南系列一
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-19 16:03:05 / 修改时间：16:58:23" itemprop="dateCreated datePublished" datetime="2022-06-19T16:03:05+08:00">2022-06-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/" itemprop="url" rel="index"><span itemprop="name">JavaScript权威指南</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
     
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
     
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">关于我
-</h1>
-
-<div class="post-meta-container">
+    <a title="JavaScript权威指南系列一" href="/posts/2215506994.html#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::4dbb4a3e323296aecbb00c91c75426b7" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body">
-          <p>一个平平无奇的业余编程爱好者</p>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>一直以来想去通读JavaScript权威指南（犀牛版）这本书，无奈里面有些知识实在写得晦涩难懂，或者是编排原因，导致一直没有持续性的阅读，今天起，用业余时间，利用博客的方式来记录阅读这本书时的收获。</p>
+<h1 id="探索JavaScript"><a href="#探索JavaScript" class="headerlink" title="探索JavaScript"></a>探索JavaScript</h1><p>想要学习一门语言，就必须先去了解这门语言的历史，虽然这对开发来说没有任何用处，但是这对学习一门语言来说，这是必要的基础。</p>
+<p>JavaScript是Netscape在Web诞生初期创造的，而这个名字时当初和Sun公司合作时<strong>Sun公司授权Netscape的</strong>，也就是说JavaScript和java语言之间没有关系，而名字是由Sun公司授权而已，而后Netscape<strong>将这门语言交给Ecma International进行标准化</strong>，但是前面提到名字是Sun公司授权，所以不能叫JavaScript标准，最后改成了ECMAScript，简称ES。</p>
+<p>JavaScript是一门高级、动态、解释型编程语言，非常适合面向对象和函数式编程风格。</p>
+<h1 id="关于ESMA标准"><a href="#关于ESMA标准" class="headerlink" title="关于ESMA标准"></a>关于ESMA标准</h1><p><code>ECMAScript</code>是一个标准，而JavaScript是对这个标准的实现。</p>
+<p>在2015年时，ESMAScript发布了ES6这个标准，其中增加了许多重要的新特性，ES6发布之后，ESMAScript每年都会发布一次，版本也以年份来标识，即ES6、ES2016、ES2017等。</p>
+<p>在ES5之前，为了向后兼容，无论版本中存在哪些低级或者有缺陷的api，都不会被删除，但在ES6中，这点得到了改变，使用ES6的脚本时会自动升级为严格模式，原来有缺陷的api将不能使用。</p>
+<h1 id="宿主环境"><a href="#宿主环境" class="headerlink" title="宿主环境"></a>宿主环境</h1><p>JavaScript最早的宿主环境是浏览器，但在2010年以后，JavaScript又有了一个宿主环境——Nodejs，它赋予了JavaScript整个操作系统的权限，允许程序的读写，网络数据的发送和接受。</p>
+<p>JavaScript语言定义了最小限度的API，而一些更高阶的API取决于宿主环境。而这也是学习javaScript的三大部分，核心语言基础，浏览器的API和NodeJS。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>阅读完这一章内容，主要了解JavaScrip的由来，ECMA的标准是怎么产出的，宿主的环境有哪些等。</p>
 
-      </div>
-      
-      
-      
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Vernal
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://vernal-ui.github.io/posts/2215506994.html" title="JavaScript权威指南系列一">http://vernal-ui.github.io/posts/2215506994.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
 
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/969607228.html" rel="prev" title="开篇">
+                  <i class="fa fa-chevron-left"></i> 开篇
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/3855727690.html" rel="next" title="JavaScript权威指南系列二">
+                  JavaScript权威指南系列二 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="SOHUCS" sid="4dbb4a3e323296aecbb00c91c75426b7"></div>
 </div>
   </main>
 
